@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+		<!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--禁止浏览器自动的识别-电话号码-email--->
+		<meta name="format-detection" content="telephone=no,email=no"/>
+		<!--是否启用Web全屏-->
+		<meta name="apple-mobile-web-app-capable" content='yes' />
+		<!--设置苹果工具栏颜色-->
+		<meta name="apple-mobile-web-app-status-bar-style" content='black' />
+		<link rel="stylesheet" type="text/css" href="../css/w_fenlei.css"/>
+		<!--<script src="../js/angular.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script src="../js/angular-1.4.6.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript" src="../js/angular-1.4.6.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		
+		<div class="w_fenlei" ng-controller="feilei">
+			<!--<span ng-repeat="aa1 in fenlei1">{{aa1.cont}}</span>-->
+				<div class="w_fenlei_header">
+					  <div>
+					  		<p>
+					  			<img src="../image/search.png"/>
+					  		</p>
+					  		<a href="sousuo.html">
+
+					  			<input type="" name="" id="" value="" placeholder="请输入您要搜索的关键词"/>
+					  		</a>
+					  </div>
+				</div>
+				<div class="w_fenlei_content">
+
+					<ul id="w_cont1">
+
+						<li ng-click="add($index)" ng-model="lists" ng-repeat="aa in list">{{aa.data}}</li>
+					</ul>
+
+
+					<ul id="w_cont3">
+						<li ng-repeat="bb in array">
+							<span class="tou">{{bb.name}}</span>
+							<p>
+								<span ng-repeat="item in bb.del">
+									<img ng-src="{{item.p1}}"/>
+									<span class="f_txt_zi">{{item.pri}}</span>
+								</span>
+							</p>
+						</li>
+					</ul>
+
+				</div>
+		</div>
+	</body>
+</html>
+
+<script src="../js/w_fenlei.js" type="text/javascript" charset="utf-8"></script>

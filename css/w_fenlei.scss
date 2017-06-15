@@ -1,0 +1,106 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+//  color: red;
+
+}
+.w_fenlei{
+    width: 100%;
+//  height: 100%;
+    li{
+        list-style: none;
+    }
+    background:  #f6f6f9;
+    .w_fenlei_header{
+        width: 100%;
+        padding: 4vw;
+        border: 1px solid #ccc;
+        >div{
+            border-radius:5px ;
+            border: 1px solid white;
+            background: white;
+            display: flex;
+            p{
+                padding: 3vw;      
+            }
+            p:first-child{
+                width: 15%;
+                  img{
+                    width: 7vw;
+                    vertical-align: middle;
+                }
+            }
+            a{
+                width: 85%;
+                display:block;
+                input{
+                    padding: 4vw 0;
+                    border: 0;
+                    outline: none;
+                    font-size: 4vw;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+    .w_fenlei_content{
+        display: flex;
+    }
+    #w_cont1{
+        width: 30%;
+        li{
+            padding: 6vw 0;
+            background:  #f6f6f9;
+            text-align: center;
+            border-left:2px solid #f6f6f9;
+        }
+        li:first-child{
+            border-left:2px solid green ;
+            color: green;
+            background: white;
+        }
+    }
+     #w_cont3{
+        width: 70%;
+        background: white;
+            li{
+                display:flex;
+                justify-content:space-between;
+                flex-wrap:wrap;
+                >span{
+                    width:100%;
+                    margin:3vw 2vw;
+                    font-size:3.5vw;
+                }
+                >p{
+                    width: 100%;
+                    display:flex;
+
+                    flex-wrap:wrap;
+                    >span{
+                        width:30%;
+                        display: block;
+                        text-align: center;
+                        margin-left:1.7vw;
+                        img{
+                            width: 100%;
+                        }
+                        .f_txt_zi{
+                            line-height:6vw;
+                            font-size:3.5vw;
+                        }
+                    }
+                }
+            }
+       
+    }
+    
+    
+    
+}

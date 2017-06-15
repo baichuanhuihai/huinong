@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--视口  设备宽度  初始缩放比例  最小缩放比例  最大缩放比例  用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <!--优先使用IE最新版本和chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--禁止浏览器自动的识别  电话号码-meail-->
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <!--是否启用Web全屏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--设置苹果工具栏颜色-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="stylesheet" type="text/css" href="../css/w_yonghu.css"/>
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../fonts/css/font-awesome.min.css"/>
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body>
+		<header class="w_header">
+			<a href="luyou.html" >
+				<i class="iconfont icon-jiantou"></i>
+			</a>
+			<span>登录</span>
+			<a href="luyou.html">
+				<i class="iconfont icon-home"></i>
+			</a>
+		</header>
+		<div class="content">
+			<ul>
+				<li>
+					<input type="text" name="" id="" value="" placeholder="用户名/手机号"/>
+				</li>
+				<li>
+					<input type="text" name="" id="" value="" placeholder="用户名/手机号"/>
+					<p class="w_dian">
+						<span class="w_dian1"></span>
+						abc•••
+					</p>
+				</li>
+				<li>
+					<span class="pp1">
+						
+						<img src="../img/radio.png" alt="">
+					</span>
+					<span>记住本次登录</span>
+				</li>
+				<li>
+					<a href="../tiao/w_congxindenglu.html">立即登录</a>
+				</li>
+			</ul>
+			<div>
+				<!--<p>-->
+					
+					<a href="../tiao/w_mianfeizuce.html">免费注册</a>
+					<a href="../tiao/w_wangjimima.html">忘记密码</a>
+				<!--</p>-->
+			</div>
+		</div>
+		<footer>
+			<p>使用合作账号登录</p>
+			<p>
+				<a href="../tiao/w_qq.html"><i class="iconfont icon-qq"></i></a>
+				<a href="../tiao/w_weibo.html"><i class="iconfont icon-weibo"></i></a>
+			</p>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		var a = 0;
+	$(".pp1").click(function(){
+
+		if(a == 0){
+			$(this).css({"background-color":"#1CBB7F"});
+			a = 1;
+		}else{
+			$(this).css({"background-color":"#fff"});
+			a = 0;
+		}
+
+	})
+		var b = 0;
+		$(".w_dian").click(function(){
+
+			if(b == 0){
+				$(".w_dian1").animate({left:"4.7vw"},10);
+				$(".w_dian").css({"background":"#1CBB7F","color":"white"});
+				b = 1;
+			}else{
+				$(".w_dian1").animate({"left":"0"},10);
+				$(".w_dian").css({"background":"white","color":"#ccc"});
+				b = 0;
+			}
+		})
+	</script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <!--视口  设备宽度  初始缩放比例  最小缩放比例  最大缩放比例  用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <!--优先使用IE最新版本和chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--禁止浏览器自动的识别  电话号码-meail-->
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <!--是否启用Web全屏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--设置苹果工具栏颜色-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/luyou.css">
+    <script type="text/javascript" src="../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/angular-1.4.6.min.js"></script>
+    <script type="text/javascript" src="../js/angular-route.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="fch_luyou_content" ng-view>
+
+    </div>
+    <div class="fch_luyou_footer">
+        <ul class="footer">
+            <li><a href="#aaa"><img src="../img/home-a.png" alt="" class="fch_luyou_footer_img"><p>首页</p></a></li>
+            <li><a href="#bbb"><img src="../img/cate.png" alt="" class="fch_luyou_footer_img"><p>分类</p></a></li>
+            <li><a href="sousuo.html"><img src="../img/search.png" alt=""><p>搜索</p></a></li>
+            <li><a href="w_gouwuce.html"><img src="../img/flow.png" alt=""><p>购物车</p></a></li>
+            <li><a href="w_yonghu.html"><img src="../img/user.png" alt=""><p>用户中心</p></a></li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript">
+    var app = angular.module("myApp",["ngRoute"]);
+    app.config(["$routeProvider",function($routeProvider){
+        $routeProvider.when("/aaa",{
+            templateUrl:"shouye.html",
+            controller:"shouye"
+        }).when("/bbb",{
+            templateUrl:"w_fenlei.html",
+            controller:"feilei"
+        }).otherwise({redirectTo:"/aaa"})
+    }])
+
+    var fch_luyou_footer_img_arr = [
+            "../img/home.png",
+            "../img/cate.png"
+    ];
+    var fch_luyou_footer_img_list = [
+            "../img/home-a.png",
+            "../img/cate-a.png"
+    ];
+
+    var fch_luyou_footer_img = document.getElementsByClassName("fch_luyou_footer_img");
+    for(var i = 0; i < fch_luyou_footer_img.length;i++){
+        fch_luyou_footer_img[i].index = i;
+        fch_luyou_footer_img[i].onclick = function(){
+            for(var j = 0; j < fch_luyou_footer_img.length;j++){
+                fch_luyou_footer_img[j].src = fch_luyou_footer_img_arr[j];
+            }
+            fch_luyou_footer_img[this.index].src = fch_luyou_footer_img_list[this.index];
+        }
+    }
+</script>
+<script type="text/javascript" src="../js/shouye.js"></script>
+<script type="text/javascript" src="../js/w_fenlei.js"></script>
+</html>

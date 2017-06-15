@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #F6F6F9;
+}
+
+.fch_luyou_content {
+  height: 100%;
+  overflow: auto;
+}
+
+.fch_luyou_footer {
+  background: white;
+}
+.fch_luyou_footer .footer {
+  display: flex;
+  padding: 1.5vw 2vw;
+  list-style: none;
+  text-align: center;
+}
+.fch_luyou_footer .footer li {
+  flex-grow: 1;
+}
+.fch_luyou_footer .footer li a {
+  text-decoration: none;
+}
+.fch_luyou_footer .footer li img {
+  width: 6vw;
+}
+.fch_luyou_footer .footer li p {
+  font-size: 3vw;
+  color: #7C7C7C;
+}
+
+/*# sourceMappingURL=luyou.css.map */

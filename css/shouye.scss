@@ -1,0 +1,136 @@
+.fch_shouye{
+  .nav{
+    position:relative;
+  }
+  .header{
+    position:absolute;
+    top:0;
+    z-index:999;
+    width:92%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2vw 4vw;
+    div:nth-of-type(1){
+      font-size:5vw;
+      color:white;
+    }
+    div:nth-of-type(2){
+      display:flex;
+      align-items:center;
+      width:70%;
+      background:rgba(255,255,255,0.7);
+      border-radius:8vw;
+      padding:0 4vw;
+      font-size:8vw;
+      span{
+        font-size:4vw;
+        margin-right:2vw;
+      }
+      a{
+
+      }
+      input{
+        background:none;
+        border:none;
+        font-size:3.5vw;
+        outline:none;
+        margin-bottom:4vw;
+      }
+    }
+    div:nth-of-type(3){
+      font-size:6vw;
+      color:white;
+    }
+  }
+
+  .bar{
+    padding:2vw 3vw;
+    text-align:center;
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    background:white;
+    li{
+      width:25%;
+      img{
+        width:70%;
+      }
+      p{
+        font-size:3vw;
+        margin:1vw 0 4vw;
+      }
+    }
+  }
+
+  .tuijian{
+     margin-top:8px;
+     display:flex;
+     justify-content:space-between;
+     div{
+       width:50%;
+       img{
+         width:100%;
+         display:block;
+       }
+     }
+   }
+
+  .huodong{
+    margin-top:8px;
+    display:flex;
+    justify-content:space-between;
+    div{
+      width:49.5%;
+      img{
+        width:100%;
+      }
+    }
+  }
+
+  .xihuan{
+    background:url(../img/bejing.png) no-repeat;
+    background-size:100%;
+    background-position:50% 50%;
+    padding:3vw 0 2vw;
+    div{
+      text-align:center;
+      font-size:4vw;
+      span{
+        color:#1BBA7F;
+      }
+    }
+    p{
+      margin-top:2vw;
+      color:#888888;
+      font-size:2vw;
+      text-align:center;
+    }
+  }
+
+  .fan{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    padding:0 2vw;
+    div{
+      background:white;
+      width:49%;
+      margin:0 0 2vw;
+      img{
+        width:100%;
+      }
+      p{
+        margin:2vw 1vw;
+        font-size:3.5vw;
+        line-height:5.5vw;
+      }
+      span{
+        margin:3vw 2vw;
+        font-size:4.5vw;
+        color:#31BB7F;
+      }
+    }
+  }
+}

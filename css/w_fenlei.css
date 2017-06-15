@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.w_fenlei {
+  width: 100%;
+  background: #f6f6f9; }
+  .w_fenlei li {
+    list-style: none; }
+  .w_fenlei .w_fenlei_header {
+    width: 100%;
+    padding: 4vw;
+    border: 1px solid #ccc; }
+    .w_fenlei .w_fenlei_header > div {
+      border-radius: 5px;
+      border: 1px solid white;
+      background: white;
+      display: flex; }
+      .w_fenlei .w_fenlei_header > div p {
+        padding: 3vw; }
+      .w_fenlei .w_fenlei_header > div p:first-child {
+        width: 15%; }
+        .w_fenlei .w_fenlei_header > div p:first-child img {
+          width: 7vw;
+          vertical-align: middle; }
+      .w_fenlei .w_fenlei_header > div a {
+        width: 85%;
+        display: block; }
+        .w_fenlei .w_fenlei_header > div a input {
+          padding: 4vw 0;
+          border: 0;
+          outline: none;
+          font-size: 4vw;
+          font-weight: bold; }
+  .w_fenlei .w_fenlei_content {
+    display: flex; }
+  .w_fenlei #w_cont1 {
+    width: 30%; }
+    .w_fenlei #w_cont1 li {
+      padding: 6vw 0;
+      background: #f6f6f9;
+      text-align: center;
+      border-left: 2px solid #f6f6f9; }
+    .w_fenlei #w_cont1 li:first-child {
+      border-left: 2px solid green;
+      color: green;
+      background: white; }
+  .w_fenlei #w_cont3 {
+    width: 70%;
+    background: white; }
+    .w_fenlei #w_cont3 li {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .w_fenlei #w_cont3 li > span {
+        width: 100%;
+        margin: 3vw 2vw;
+        font-size: 3.5vw; }
+      .w_fenlei #w_cont3 li > p {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; }
+        .w_fenlei #w_cont3 li > p > span {
+          width: 30%;
+          display: block;
+          text-align: center;
+          margin-left: 1.7vw; }
+          .w_fenlei #w_cont3 li > p > span img {
+            width: 100%; }
+          .w_fenlei #w_cont3 li > p > span .f_txt_zi {
+            line-height: 6vw;
+            font-size: 3.5vw; }
+
+/*# sourceMappingURL=w_fenlei.css.map */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/shouye.css">
+</head>
+<body>
+<div class="fch_shouye" ng-controller="shouye">
+    <div class="nav">
+        <div class="header">
+            <div class="iconfont icon-caidan color-whie"></div>
+            <div>
+
+                <span class="iconfont icon-sousuo"></span>
+                <a href="sousuo.html"><input type="text" placeholder="请输入您搜索的关键词！"></a>
+            </div>
+            <div class="iconfont icon-xiaoxi1 color-whie n-xiaoxi-size"></div>
+        </div>
+
+        <div class="swiper-container"><!--控制器，给这个class名添加宽高控制大小-->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/1497223203921729320.jpg" style="width:100%"/></div>
+                <div class="swiper-slide"><img src="../img/1495168336271420307.png" style="width:100%"/></div>
+                <div class="swiper-slide"><img src="../img/1495168477912925221.jpg" style="width:100%"/></div>
+                <div class="swiper-slide"><img src="../img/1495390226816501966.jpg" style="width:100%"/></div>
+                <div class="swiper-slide"><img src="../img/1495681744653403506.png" style="width:100%"/></div>
+            </div>
+            <div class="swiper-pagination"></div><!--分页器-->
+        </div>
+    </div>
+
+    <ul class="bar">
+        <li><img src="../img/nav_0.png" alt=""><p>全部分类</p></li>
+        <li><img src="../img/nav_1.png" alt=""><p>我的订单</p></li>
+        <li><img src="../img/nav_2.png" alt=""><p>最新团购</p></li>
+        <li><img src="../img/nav_3.png" alt=""><p>促销活动</p></li>
+        <li><img src="../img/nav_4.png" alt=""><p>热门搜索</p></li>
+        <li><img src="../img/nav_5.png" alt=""><p>品牌街</p></li>
+        <li><img src="../img/nav_6.png" alt=""><p>个人中心</p></li>
+        <li><img src="../img/nav_7.png" alt=""><p>购物车</p></li>
+    </ul>
+
+    <div class="tuijian">
+        <div><img src="../img/1494814636853064885.png" alt=""></div>
+        <div>
+            <img src="../img/1469151973864141768.jpg" alt="">
+            <img src="../img/1479160225935912647.jpg" alt="">
+        </div>
+    </div>
+    
+    <div class="huodong">
+        <div>
+            <img src="../img/1496887314528165109.png" alt="">
+            <img src="../img/1496887364269020209.png" alt="">
+        </div>
+        <div>
+            <img src="../img/1496887697032681779.png" alt="">
+            <img src="../img/1496887617894676234.png" alt="">
+        </div>
+    </div>
+
+    <div class="xihuan">
+        <div>
+            <span class="iconfont icon-cainixihuan is-cainixhuan"></span>
+            猜你喜欢
+        </div>
+        <p>实时推荐最适您的宝贝</p>
+    </div>
+
+    <div class="fan">
+        <div ng-repeat="item in data.data.fan">
+            <img ng-src="{{item.img}}" alt="">
+            <p ng-bind="item.p"></p>
+            <span ng-bind="item.span"></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
